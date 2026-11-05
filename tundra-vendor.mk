@@ -3406,10 +3406,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/vendor/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/mot_dw9781c.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9781c.prog \
-    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
-    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_gc02m1b_tsp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_gc02m1b_tsp.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_hi1336_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_hi1336_ofilm.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_ov50a_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_ov50a_sunny.bin \
@@ -3435,7 +3431,6 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libCB \
     libOpenCL \
-    libVkLayer_q3dtools \
     libadreno_app_profiles \
     libadreno_utils \
     libaudio_log_utils \
@@ -3492,9 +3487,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
-    vendor.qti.qspmhal@1.0 \
     btaudio_offload_if \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    libVkLayer_q3dtools \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -3524,6 +3519,7 @@ PRODUCT_PACKAGES += \
     libasphere \
     libmmieffectswrapper \
     libshoebox \
+    vendor.qti.qspmhal@1.0 \
     com.mot.eeprom.mot_gt24p128e_ov50a_eeprom \
     com.mot.eeprom.mot_gt24p64e_hi1336_eeprom \
     com.mot.eeprom.mot_gt24p64e_s5kgd2_eeprom \
@@ -3644,6 +3640,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
+    libVkLayer_ADRENO_qprofiler \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
@@ -3762,6 +3759,7 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    libllvm-qgl \
     libloadalgo_stub \
     libloc_api_v02 \
     libloc_socket \
@@ -3821,6 +3819,7 @@ PRODUCT_PACKAGES += \
     libqrtrclient \
     libqseed3 \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqtikeymaster4 \
     librcc \
     librcmask \
@@ -3985,6 +3984,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.qti.qspmhal-V1-ndk \
     vendor_lib_rfsa_adsp_bm2n06_bin \
     vendor_lib_rfsa_adsp_bm2n08_bin \
     vendor_lib_rfsa_adsp_bm2n12_bin \
