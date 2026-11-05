@@ -13,6 +13,6 @@ _tundra_reassemble_split_files() {
             echo "tundra vendorsetup: reassembling $(basename "$target")"
             cat "$target".split.* > "$target"
         fi
-    done < <(find "$vendor_dir" -name '*.split.001' 2>/dev/null)
+    done < <(find "$vendor_dir" -name .git -prune -o -name '*.split.001' -print 2>/dev/null)
 }
 _tundra_reassemble_split_files

@@ -3406,6 +3406,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/tundra/proprietary/vendor/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin \
     vendor/motorola/tundra/proprietary/vendor/firmware/mot_dw9781c.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9781c.prog \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/motorola/tundra/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_gc02m1b_tsp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_gc02m1b_tsp.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_hi1336_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_hi1336_ofilm.bin \
     vendor/motorola/tundra/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_tundra_ov50a_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_tundra_ov50a_sunny.bin \
@@ -3431,6 +3435,8 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libCB \
     libOpenCL \
+    libVkLayer_q3dtools \
+    libadreno_app_profiles \
     libadreno_utils \
     libaudio_log_utils \
     libc2d30_bltlib \
@@ -3444,8 +3450,11 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
+    libgpudataproducer \
     libgsl \
     libidl \
+    libkcl \
+    libkernelmanager \
     libllvm-glnext \
     libllvm-qcom \
     libmdmdetect \
@@ -3483,6 +3492,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
+    vendor.qti.qspmhal@1.0 \
     btaudio_offload_if \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libacdb-fts \
