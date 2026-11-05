@@ -3669,6 +3669,7 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libOpenCL_adreno \
     libQ6MSFR_manager_stub \
     libQSEEComAPI \
     libQTEEConnector_vendor \
