@@ -4045,7 +4045,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     com.motorola.frameworks.core.addon \
     com.motorola.motosignature \
-    moto-checkin \
     moto-core_services \
     moto-settings \
     tcmclient \
